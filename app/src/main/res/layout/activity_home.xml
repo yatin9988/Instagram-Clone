@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeActivity">
 
     <RelativeLayout
@@ -48,11 +48,12 @@
 
          <com.google.android.material.bottomnavigation.BottomNavigationView
              android:id="@+id/bottom_navigation_view"
-             android:background="@drawable/grey_border_bottom"
+             app:labelVisibilityMode="unlabeled"
              android:layout_width="match_parent"
-             android:layout_height="match_parent">
-         </com.google.android.material.bottomnavigation.BottomNavigationView>
-
+             android:layout_height="match_parent"
+             android:background="@drawable/grey_border_bottom"
+             app:itemIconTint="@color/on_item_selected"
+             app:menu="@menu/bottom_navigation_menu"/>
      </RelativeLayout>
 
     </RelativeLayout>
