@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@drawable/grey_border_top"
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_marginStart="15dp"
+            android:text="yatin.kumar"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            app:labelVisibilityMode="unlabeled"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/grey_border_bottom"
+            app:itemIconTint="@color/on_item_selected"
+            app:menu="@menu/bottom_navigation_menu"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -48,6 +48,8 @@ public class HomeActivity extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
 
+        tabLayout.setTabRippleColor(null); // sets the ripple color ,in this case it is null so no ripple effect
+
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_camera);
         tabLayout.getTabAt(1).setIcon(R.drawable.ic_instagram_black);
         tabLayout.getTabAt(2).setIcon(R.drawable.ic_arrow);
