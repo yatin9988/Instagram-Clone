@@ -6,5 +6,5 @@
     <color name="gray">#bfbfbf</color>
     <color name="white">#ffffff</color>
     <color name="inactive_tab_color">#a9a9a9</color>
-    <color name="active_tab_color">#696969</color>
+    <color name="active_tab_color">#000000</color>
 </resources>

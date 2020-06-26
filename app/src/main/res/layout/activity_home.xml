@@ -16,12 +16,13 @@
             android:layout_width="match_parent"
             android:layout_height="50dp">
 
-            <androidx.appcompat.widget.Toolbar
+            <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabs"
+                app:tabIndicatorColor="@color/on_item_selected"
                 android:background="@drawable/grey_border_top"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-            </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.tabs.TabLayout>
 
         </RelativeLayout>
 
